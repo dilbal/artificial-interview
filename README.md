@@ -1,7 +1,19 @@
-# artificial-interview
-AI Engineer Intern Technical Task - Dilip Balakrishnan
+# AI Engineering Intern Technical Task 
 
-Part 1 (user playing with LLM) and 2 (LLM playing with LLM) have been implemented in the various files through a CLI. 
+## Project Structure
+```
+artificial-interview/
+├── README.md                    # This file
+├── requirements.txt             # Python dependencies
+├── config.py                    # API configuration and constants
+├── game.py                      # GameState class - core game logic
+├── players.py                   # Player1 and Player2 classes
+├── llm_client.py                # LLM API client wrapper
+├── interface.py                 # GameInterface - CLI and game flow
+├── main.py                      # Entry point to run the game
+```
+
+Part 1 (user playing with LLM) and 2 (LLM playing with LLM) have been implemented in the various files above through a CLI. 
 
 Some techniques used to ensure that the program doesn't have any unexpected behaviour include:
 
@@ -11,7 +23,7 @@ Some techniques used to ensure that the program doesn't have any unexpected beha
 
 3. Enforcing 20 question limit: in game.py, GameState.add_question_answer() ensures that the game continues until 20 questions have been used.
 
-Part 3: 
+## Part 3: 
 
 Implementing a scheme to automatically evaluate performance of LLM as player 1 and player 2.
 
@@ -38,4 +50,3 @@ Some possible emergent behaviours would include the following:
 1. Strategic guessing: Only making specific types of guesses (e.g.: "Is it X?") when confidence is high. (e.g.: in situations when LLM is guessing after narrowing to 2-3 likely options.). To encourage this, heavy penalty could be given for incorrect guesses. 
 
 2. Guess spamming: Making many rapid low-confidence guesses hoping to get lucky (e.g: "Is it an apple", "Is it a chair" etc for more than 10 questions). To discourage such behaviour, heavy pentalty could be given for incorrect guesses. 
-
