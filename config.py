@@ -1,6 +1,6 @@
 
 #API configuration
-CANDIDATE_API_KEY = "xe9PuJuWkY64XIA0Ap91JamEaXVLS2Sq4vgLRTNX"
+CANDIDATE_API_KEY = 
 BASE_URL = "https://candidate-llm.extraction.artificialos.com/v1/responses"
 MODEL_NAME = "gpt-5-mini-2025-08-07"
 
